@@ -1,0 +1,131 @@
+body {
+  background-color: white;
+}
+
+.registration-page .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 500px;
+  box-shadow: 25px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-left: 530px;
+  margin-top: 100px;
+}
+
+.card-body {
+  padding: 40px;
+  width: 430px;
+}
+
+.card-title {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #094fe4;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 68px;
+}
+
+.form-floating {
+  margin-bottom: 20px;
+}
+
+.row.g-2 .form-floating {
+  width: 100%;
+}
+
+.col {
+  margin-bottom: 15px;
+}
+
+.col-md-5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-md-5 .form-floating {
+  width: 93%;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.custom-last-name {
+  margin-left: auto;
+}
+
+.form-check-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-check {
+  margin-right: 20px;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.form-check-label {
+  margin-left: 5px;
+}
+
+.btn-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-primary,
+.cancel-button {
+  width: 48%;
+  margin-left: 62px;
+  margin-top: 10px;
+}
+
+.cancel-button {
+  margin-left: 5px;
+  color: #000;
+  background-color: #fa1818d7;
+}
+
+.cancel-button:hover {
+  background-color: #c9302c;
+}
+
+.card-footer {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 65px;
+  margin-bottom: 0px;
+}
+
+.card-footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 395px;
+  cursor: pointer;
+  padding: 10px;
+}

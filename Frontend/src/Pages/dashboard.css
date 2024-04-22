@@ -1,0 +1,104 @@
+/* body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+}
+
+.dashboard {
+  display: flex;
+}
+
+.top-navbar {
+  background-color: #3498db; 
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.menu-toggle {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.website-info h2 {
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 15px;
+}
+
+.logout-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.welcome-message {
+  padding: 10px;
+  background-color: #2c3e50; 
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.left-menu {
+  width: 0;
+  height: 100%;
+  background-color: #2c3e50; 
+  color: #ecf0f1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  padding-top: 70px;
+  transition: width 0.2s ease-in-out;
+}
+
+.left-menu.open {
+  width: 230px;
+}
+
+.left-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-menu li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+ 
+}
+
+.left-menu li:hover {
+  background-color: #dedee1;
+}
+
+.menu-icon {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.menu-open {
+  margin-left: 0px;
+  transition: margin-left 0.3s;
+}
+
+.account-icon{
+  margin-right: 20px;
+  font-size: 25px;
+} */

@@ -1,0 +1,108 @@
+/* .footer {
+  background: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-floating input {
+  width: 120%; 
+}
+
+.login-container {
+  background: url("https://www.3equals.in/wp-content/uploads/2019/11/banner1.jpg") center/cover no-repeat;
+  border: 0px solid #000000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hello {
+  position: absolute;
+  top: 0;
+  left: 10;
+  padding: 20px; 
+  color: #ffffff;
+  text-align: center;
+}
+
+.content {
+  background-color: rgba(172, 200, 255, 0.8);
+  padding: 60px;
+  padding-right: 105px;
+  border-radius: 10px;
+  box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.3);
+  border: 5px solid #0057b3d2;
+}
+
+.content h1 {
+  text-align: center;
+  padding-left: 35px;
+  padding-bottom: 30px;
+  text-shadow: 0px 0px 1px rgb(255, 255, 255);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+@media (min-width: 969px) {
+  .login-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 150px;
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
+.website-name {
+  text-align: center;
+  padding: 10px;
+  background-color: #eaeff2 
+}
+
+.website-name h2 {
+  margin-bottom: 0; 
+  color: #ffffff;
+}
+
+.form-floating label {
+  color: #000000;
+}
+
+.form-check-input{
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  border: none;
+  padding: 10px;
+  width: 120%;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #0056b3, #007bff);
+} */

@@ -1,0 +1,86 @@
+/* .edit-page {
+  background-image: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 280px;
+}
+
+.edit-container {
+  width: 100%;
+  max-width: 500px;
+  padding-top: 40px;
+}
+
+.edit-card {
+  box-shadow: 25px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.edit-card-body {
+  padding-right: 100px;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+.edit-card-title {
+  margin-left: 70px;
+  color: #1a5cf5;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-floating label {
+  pointer-events: none;
+}
+
+.pencil-icon {
+  position: absolute;
+  top: 50%;
+  right: -40px; 
+  transform: translateY(-40%);
+  color: #6c757d; 
+  
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 5px;
+}
+
+.form-select {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+}
+
+.cancel-button:hover {
+  background-color: #bbb;
+}
+
+.edit-card-footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .edit-card {
+    margin-top: 20px;
+  }
+}
+ */

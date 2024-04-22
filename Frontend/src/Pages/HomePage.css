@@ -1,0 +1,296 @@
+/* .count-box {
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  padding: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.count-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.datetime-display {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.datetime-display h4 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #000000; 
+}
+
+.count-box-title {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.count-box-count {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.total-employees-box {
+  background-color: #b2d2f3; 
+  color: #000000; 
+ 
+}
+
+.inside-office-box {
+  background-color: #acf5a9; 
+  color: #000000; 
+
+}
+
+.outside-office-box {
+  background-color: #f0a9b0; 
+  color: #000000; 
+  
+}
+
+.live-counts-box {
+  background-color: #74a7ff; 
+  color: #000000; 
+
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3498db; 
+}
+
+.modal-body {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.modal-content {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-footer .btn-secondary {
+  background-color: #999c9e; 
+  color: #fff; 
+  border: none;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #2980b9; 
+}
+
+.carousel-content {
+  background: url('https://img.freepik.com/free-vector/modern-banner-with-abstract-low-poly-design_1048-14340.jpg') center/cover;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carousel-content h3 {
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.carousel-content p {
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+}
+
+.carousel-indicators li {
+  background-color: #000000;
+}
+
+.carousel-indicators .active {
+  background-color: #000000;
+}
+
+.carousel-container {
+  max-width: 1000px; 
+  margin: 0 auto; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-control-prev, .carousel-control-next {
+  font-size: 2rem; 
+  color: #ffffff; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  top: 50%; 
+  
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: transparent; 
+}
+
+.count-box.total-employees-box {
+  position: relative;
+  z-index: 1;
+}
+
+.left-menu.open {
+  z-index: 2;
+}
+ */
+
+
+
+
+
+ /* import React, { useState, useEffect } from "react";
+import { Container, Button, Typography, Paper, Card, CardContent, CardHeader, List, ListItem, ListItemText, Dialog, DialogTitle, DialogContent, DialogActions, Box } from "@mui/material";
+import LinearProgress from "@mui/material/LinearProgress";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+
+const StyledCard: React.FC<{ title: string, count: number, onClick: () => void }> = ({ title, count, onClick }) => {
+  let backgroundColor = "";
+
+  switch (title) {
+    case "TOTAL EMPLOYEES":
+      backgroundColor = '#3C5997';
+      break;
+    case "INSIDE OFFICE":
+      backgroundColor = '#3399FE';
+      break;
+    case "OUTSIDE OFFICE":
+      backgroundColor = '#F8B114';
+      break;
+    case "EMPLOYEES ON LEAVE":
+      backgroundColor = '#E55352';
+      break;
+    default:
+      backgroundColor = '#f3f3f3';
+  }
+
+  return (
+    <Card onClick={onClick} sx={{ cursor: 'pointer', backgroundColor, transition: 'transform 0.2s', '&:hover': { transform: 'scale(1.05)' }, width: '200px', height: '200px', margin: '10px' }}>
+      <CardHeader title={title} sx={{ color: 'white', textTransform: 'uppercase', fontSize: '1.1rem', fontWeight: 'bold',textAlign: 'center' }} />
+      <CardContent>
+        <Typography variant="h4" sx={{ color: 'white', fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center' }}>{count}</Typography>
+        {/* Progress Bar */
+        /* <LinearProgress variant="determinate" value={count} sx={{ width: '100%', height: '5px', marginTop: '18px', backgroundColor: 'rgba(0, 0, 0, 0.2)', '& .MuiLinearProgress-barColorPrimary': { backgroundColor: 'white' } }} />
+      </CardContent>
+    </Card>
+  );
+};
+
+const HomePage: React.FC = () => {
+  const [counts, setCounts] = useState({
+    total_employees: 0,
+    inside_office: 0,
+    outside_office: 0,
+    live_counts: 0,
+  });
+
+  const [showModal, setShowModal] = useState(false);
+  const [modalContent, setModalContent] = useState({ title: "", details: "" });
+  const [modalEmployeeList, setModalEmployeeList] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/counts");
+        const data = await response.json();
+        const liveCounts = Math.max(0, data.live_counts);
+        console.log("API Response:", data);
+        setCounts({ ...data, live_counts: liveCounts });
+      } catch (error) {
+        console.error("Error fetching counts:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const handleBoxClick = async (title: string) => {
+    try {
+      const response = await fetch(`http://127.0.0.1:8000/employees/${title.toLowerCase().replace(/\s+/g, "_")}`);
+      const data = await response.json();
+      console.log("Employee Data:", data);
+      setModalEmployeeList(data);
+      setModalContent({ title, details: "" });
+      setShowModal(true);
+    } catch (error) {
+      console.error(`Error fetching employee list for ${title}:`, error);
+    }
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
+  return (
+    <Container>
+      <Paper elevation={10} sx={{ padding: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'stretch', flexDirection: 'row', height: 'auto', maxHeight: '70vh', marginTop:'90px', marginLeft:'230px' }}>
+        <StyledCard title="TOTAL EMPLOYEES" count={counts.total_employees} onClick={() => handleBoxClick("Total Employees")} />
+        <StyledCard title="INSIDE OFFICE" count={counts.inside_office} onClick={() => handleBoxClick("Inside Office")} />
+        <StyledCard title="OUTSIDE OFFICE" count={counts.outside_office} onClick={() => handleBoxClick("Outside Office")} />
+        <StyledCard title="EMPLOYEES ON LEAVE" count={counts.live_counts} onClick={() => handleBoxClick("On Leave")} />
+      </Paper>
+
+      <Dialog open={showModal} onClose={closeModal}>
+        <DialogTitle>{modalContent.title}</DialogTitle>
+        <DialogContent>
+          {modalEmployeeList.length > 0 ? (
+            <List>
+              {modalEmployeeList.map((employee, index) => (
+                <ListItem key={index}>
+                  <ListItemText primary={employee} />
+                </ListItem>
+              ))}
+            </List>
+          ) : (
+            <Typography variant="body1">No employees found for {modalContent.title}.</Typography>
+          )}
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={closeModal} variant="contained">Dismiss</Button>
+        </DialogActions>
+      </Dialog>
+
+      <Box sx={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', mt: 3, marginLeft: '230px', marginBottom:'30px' }}>
+        <Paper elevation={10} sx={{ padding: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row', height: 'auto', maxHeight: '70vh', paddingRight:'100px' }}>
+          <Typography variant="h5" sx={{ marginBottom: '250px', fontFamily: 'sans-serif', fontWeight: 'bolder', fontSize:'1.7rem' }}>Statistics </Typography>
+          <BarChart width={600} height={300} data={[counts]}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="title" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="total_employees" fill="#3C5997" />
+            <Bar dataKey="inside_office" fill="#3399FE" />
+            <Bar dataKey="outside_office" fill="#F8B114" />
+            <Bar dataKey="live_counts" fill="#E55352" />
+          </BarChart>
+        </Paper>
+      </Box>
+    </Container>
+  );
+};
+
+export default HomePage; */ 
